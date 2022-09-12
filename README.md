@@ -1,5 +1,5 @@
 # Stenography-Stenoread-Commands
-### The files below are output to the /nsm/pcapout directory. This is mapped to the so-steno container's /tmp directory.
+### The files below are output to the /nsm/pcapout directory on Security Onion. This is mapped to the so-steno container's /tmp directory.
 
 Search through stenographer files and index looking for all GRE traffic and write to pcap file. Will be saved in /nsm/pcaptmp/ directory.
 <pre><code>docker container exec so-steno stenoread --limit-bytes 500000 'ip proto 47' -w /tmp/gre.pcap</code></pre>
